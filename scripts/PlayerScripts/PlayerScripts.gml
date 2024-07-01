@@ -97,6 +97,13 @@ function PlayerStateRoll(){
 	{
 		playerState = PlayerStateFree;
 	}
+	
+	// If Collided
+	if (_collided)
+	{
+		playerState = PlayerStateFree;
+		ScreenShake( 3, 30);
+	}
 }
 
 function PlayerStatePause(){

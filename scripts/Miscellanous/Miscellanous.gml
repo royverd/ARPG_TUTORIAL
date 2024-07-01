@@ -1,5 +1,17 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function Miscellanous(){
+/// @desc ScreenShake(_magnitude, _frames)
+/// @arg _magnitude set the stength
+/// @arg _frames sets the length of the shake in frames
+function ScreenShake(_magnitude, _frames){
+	
+	with (global.insCamera)
+	{
+	if (_magnitude > shakeRemain)
+		{
+			shakeMagnitude = _magnitude;
+			shakeRemain = shakeMagnitude;
+			shakeLength = _frames;
+		}
+	}
+
 
 }
