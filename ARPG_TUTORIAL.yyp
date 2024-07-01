@@ -34,11 +34,16 @@
     "IDEVersion": "2023.11.1.129",
   },
   "resources": [
+    {"id":{"name":"sprVillageTiles","path":"sprites/sprVillageTiles/sprVillageTiles.yy",},},
     {"id":{"name":"sprPlayerRun","path":"sprites/sprPlayerRun/sprPlayerRun.yy",},},
     {"id":{"name":"Miscellanous","path":"scripts/Miscellanous/Miscellanous.yy",},},
+    {"id":{"name":"rRoot","path":"rooms/rRoot/rRoot.yy",},},
+    {"id":{"name":"tVillageTiles","path":"tilesets/tVillageTiles/tVillageTiles.yy",},},
+    {"id":{"name":"oGame","path":"objects/oGame/oGame.yy",},},
     {"id":{"name":"MACROS","path":"scripts/MACROS/MACROS.yy",},},
     {"id":{"name":"sprPlayerRoll","path":"sprites/sprPlayerRoll/sprPlayerRoll.yy",},},
     {"id":{"name":"sprCol","path":"sprites/sprCol/sprCol.yy",},},
+    {"id":{"name":"rVillage","path":"rooms/rVillage/rVillage.yy",},},
     {"id":{"name":"sprPlayer","path":"sprites/sprPlayer/sprPlayer.yy",},},
     {"id":{"name":"tCol","path":"tilesets/tCol/tCol.yy",},},
     {"id":{"name":"PlayerScripts","path":"scripts/PlayerScripts/PlayerScripts.yy",},},
@@ -48,6 +53,8 @@
   ],
   "RoomOrderNodes": [
     {"roomId":{"name":"rInit","path":"rooms/rInit/rInit.yy",},},
+    {"roomId":{"name":"rRoot","path":"rooms/rRoot/rRoot.yy",},},
+    {"roomId":{"name":"rVillage","path":"rooms/rVillage/rVillage.yy",},},
   ],
   "templateType": "game",
   "TextureGroups": [
