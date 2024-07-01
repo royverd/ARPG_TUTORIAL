@@ -17,7 +17,6 @@
     {"name":"Particle Systems","order":15,"path":"folders/Particle Systems.yy",},
   ],
   "ResourceOrderSettings": [
-    {"name":"MACROS","order":16,"path":"scripts/MACROS/MACROS.yy",},
-    {"name":"Create_0","order":17,"path":"scripts/Create_0/Create_0.yy",},
+    {"name":"MACROS","order":1,"path":"scripts/MACROS/MACROS.yy",},
   ],
 }
