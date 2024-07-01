@@ -17,6 +17,12 @@
     {"name":"Particle Systems","order":15,"path":"folders/Particle Systems.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"sprPlayerRun","order":1,"path":"sprites/sprPlayerRun/sprPlayerRun.yy",},
+    {"name":"Miscellanous","order":3,"path":"scripts/Miscellanous/Miscellanous.yy",},
     {"name":"MACROS","order":1,"path":"scripts/MACROS/MACROS.yy",},
+    {"name":"sprPlayerRoll","order":2,"path":"sprites/sprPlayerRoll/sprPlayerRoll.yy",},
+    {"name":"sprCol","order":3,"path":"sprites/sprCol/sprCol.yy",},
+    {"name":"PlayerScripts","order":2,"path":"scripts/PlayerScripts/PlayerScripts.yy",},
+    {"name":"Text","order":4,"path":"scripts/Text/Text.yy",},
   ],
 }
