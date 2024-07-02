@@ -5,5 +5,8 @@
 #macro RESOLUTION_W 320
 #macro RESOLUTION_H 180
 #macro CAM_OFF 15
-#macro T_GAP 8
+#macro T_STROKE 8
+#macro T_ISTROKE 1
 #macro INTERACTION_GAP 20
+#macro TEXT_BOX_HEIGHT 70
+#macro DEFAULT_TBG_FRAME 1

@@ -110,6 +110,6 @@ function PlayerStatePause(){
 	
 }
 
-function PlayerStateLock(){
-	
+function PlayerStateLocked(){
+	// Does Nothing
 }
