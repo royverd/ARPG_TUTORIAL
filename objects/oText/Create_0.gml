@@ -13,6 +13,8 @@ x2Target = RESOLUTION_W;
 lerpProgress = 0; // % of animation complted
 textProgress = 0; // Progress of text animation in characters
 
+responses = ["Test Response", "Test Response Dos"];
+responseSelected = 0;
 
 
 
