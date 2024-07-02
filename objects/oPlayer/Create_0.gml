@@ -1,7 +1,8 @@
 /// @description Player Creation Logic
 
 playerState = PlayerStateFree;
-lastState = playerState;
+playerStateLast = playerState;
+skipStepEvent = false;
 
 collisionMap = layer_tilemap_get_id(layer_get_id("Collision"));
 

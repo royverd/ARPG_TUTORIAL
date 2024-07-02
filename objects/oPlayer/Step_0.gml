@@ -13,8 +13,19 @@ keyItem = keyboard_check_pressed(vk_control);
 inputDirection = point_direction(0, 0, keyRight - keyLeft, keyDown - keyUp);
 inputMagnitude = (keyRight - keyLeft != 0) || (keyDown - keyUp != 0);
 
-// Change State
+// Skip Step
+if(skipStepEvent){
+
+skipStepEvent = false;
+
+return;
+
+}
+// Do Step
 if (!global.gamePaused) script_execute(playerState);
+
+// Set player Depth to Highest
+depth = -bbox_bottom;
 
 
 

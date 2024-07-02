@@ -22,7 +22,11 @@ if (keyboard_check_pressed(vk_space))
 		}
 		else
 		{
-			with (oPlayer) playerState = lastState;
+			with (oPlayer)
+			{
+				playerState = playerStateLast;
+				skipStepEvent = true // In order to not re-open text in the same frame
+			}
 		}
 	}
 	else

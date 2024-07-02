@@ -71,8 +71,33 @@ function PlayerStateFree(){
 	// Change State
 	if (keyActivate)
 	{
-		playerState = PlayerStateRoll;
-		moveDistanceRemaining = distanceRoll;
+		
+		// 1 - Check for Entity
+		var _activateX = lengthdir_x(INTERACTION_DISTANCE, direction);
+		var _activateY = lengthdir_y(INTERACTION_DISTANCE, direction);
+		activate = instance_position(x + _activateX, y - INTERACTION_DISTANCE + _activateY, pEntity);
+		
+		// 2 - No Entity or non-interactable Entity
+		if (activate == noone || activate.entActivateScript == -1)
+		{
+			playerState = PlayerStateRoll; // Roll Instead
+			moveDistanceRemaining = distanceRoll;
+		}
+		// 3 - Interactable Entity
+		else
+		{
+			script_execute_ext(activate.entActivateScript, activate.entActivateArgs);
+			
+			// 4 - If NPC Entity, Face Player
+			if (activate.entNPC)
+			{
+				with(activate)
+				{
+					direction = point_direction(x, y, other.x, other.y);
+					image_index = CARDINAL_DIR;
+				}
+			}
+		}
 	}
 }
 
