@@ -10,10 +10,9 @@ y2 = RESOLUTION_H;
 x1Target = 0;
 x2Target = RESOLUTION_W;
 
-lerpProgress = 0; // % of animation complted
+lerpProgress = 0; // % of animation completed
 textProgress = 0; // Progress of text animation in characters
 
-responses = ["Test Response", "Test Response Dos"];
 responseSelected = 0;
 
 

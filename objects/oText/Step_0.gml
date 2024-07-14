@@ -24,6 +24,14 @@ if (keyboard_check_pressed(vk_space))
 	var _messageLength = string_length(message);
 	if (textProgress >= _messageLength)
 	{
+		if (responses[0] != -1)
+		{
+			with (originInstance)
+			{
+				DialogueResponses(other.responseScripts[other.responseSelected]);
+			}
+		}
+		
 		instance_destroy();
 		// Decrement All Remaing Ticket's Values
 		if (instance_exists(oTextQueued))

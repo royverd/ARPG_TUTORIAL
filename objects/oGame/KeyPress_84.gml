@@ -1,7 +1,7 @@
 /// @desc Display Text
 
-NewTextBox("Why did the scarecrow win an award?");
-NewTextBox("Because it was outstanding in his field");
+//NewTextBox("Why did the scarecrow win an award?", 0);
+//NewTextBox("Because it was outstanding in his field", 0);
 
 //NewTextBox("Why can't you give Elsa a balloon?");
 //NewTextBox("Because she will let it go");
@@ -24,8 +24,8 @@ NewTextBox("Because it was outstanding in his field");
 //NewTextBox("How do you comfort a JavaScript bug?");
 //NewTextBox("You console it");
 
-//NewTextBox("Why did the integer drown?");
-//NewTextBox("Because it couldn't float");
+NewTextBox("Why did the integer drown?");
+NewTextBox("Because it couldn't float");
 
 //NewTextBox("Why did the database administrator leave his wife?");
 //NewTextBox("She had one-to-many relationships");
