@@ -12,7 +12,7 @@ function NewTextBox(_message, _background = 1, _responses_arr = [-1]){
 		message = _message;
 		// Get Caller Id if Any
 		if (instance_exists(other)) originInstance = other.id else originInstance = noone;
-		// Set Background (obsolete)
+		// Set Background (obsolete)  
 		if (argument_count > 1) background = _background;
 		else background = DEFAULT_TBG_FRAME;
 		// Responses

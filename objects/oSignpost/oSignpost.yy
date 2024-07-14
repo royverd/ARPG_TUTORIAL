@@ -7,6 +7,7 @@
   "overriddenProperties": [
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"pEntity","path":"objects/pEntity/pEntity.yy",},"propertyId":{"name":"entActivateScript","path":"objects/pEntity/pEntity.yy",},"value":"NewTextBox",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"pEntity","path":"objects/pEntity/pEntity.yy",},"propertyId":{"name":"entActivateArgs","path":"objects/pEntity/pEntity.yy",},"value":"[\"Don't Walk on The Grass\"]",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"pEntity","path":"objects/pEntity/pEntity.yy",},"propertyId":{"name":"entShadow","path":"objects/pEntity/pEntity.yy",},"value":"False",},
   ],
   "parent": {
     "name": "Misc",

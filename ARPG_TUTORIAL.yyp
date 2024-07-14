@@ -59,6 +59,8 @@
     {"id":{"name":"oText","path":"objects/oText/oText.yy",},},
     {"id":{"name":"sprSignpost","path":"sprites/sprSignpost/sprSignpost.yy",},},
     {"id":{"name":"oFishy","path":"objects/oFishy/oFishy.yy",},},
+    {"id":{"name":"sprPlayerHurt","path":"sprites/sprPlayerHurt/sprPlayerHurt.yy",},},
+    {"id":{"name":"sprShadow","path":"sprites/sprShadow/sprShadow.yy",},},
     {"id":{"name":"oTextQueued","path":"objects/oTextQueued/oTextQueued.yy",},},
     {"id":{"name":"sprFishy","path":"sprites/sprFishy/sprFishy.yy",},},
     {"id":{"name":"sprCol","path":"sprites/sprCol/sprCol.yy",},},

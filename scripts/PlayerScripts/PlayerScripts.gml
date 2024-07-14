@@ -123,13 +123,41 @@ function PlayerStateRoll(){
 		playerState = PlayerStateFree;
 	}
 	
-	// If Collided
+	// Collision Interactions
 	if (_collided)
 	{
-		playerState = PlayerStateFree;
+		playerState = PlayerStateBonk;
+		moveDistanceRemaining = distanceBonk;
 		ScreenShake( 3, 30);
 	}
 }
+
+function PlayerStateBonk(){
+	
+	// Get Current Direction
+	//if (inputDirection == 0) inputDirection = direction;
+	
+	hSpeed = lengthdir_x(speedBonk, direction - FULL_CIRCLE/2);
+	vSpeed = lengthdir_y(speedBonk, direction - FULL_CIRCLE/2);
+	
+	moveDistanceRemaining = max(0, moveDistanceRemaining - speedBonk);
+	var _collided = PlayerCollision();
+	
+	//Update Sprite
+	if(sprite_index != sprPlayerHurt) sprite_index = sprPlayerHurt;
+	image_index = CARDINAL_DIR - 2;
+	
+	// Change Height (Arc)
+	z = sin(((moveDistanceRemaining / distanceBonk) * pi)) * distanceBonkHeight;
+	
+	// Change State
+	if (moveDistanceRemaining <= 0)
+	{
+		playerState = PlayerStateFree;
+	}
+	
+}
+
 
 function PlayerStatePause(){
 	

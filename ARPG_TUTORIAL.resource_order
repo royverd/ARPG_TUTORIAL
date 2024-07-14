@@ -34,6 +34,8 @@
     {"name":"oCamera","order":1,"path":"objects/oCamera/oCamera.yy",},
     {"name":"sprPlayerRoll","order":1,"path":"sprites/sprPlayerRoll/sprPlayerRoll.yy",},
     {"name":"oFishy","order":3,"path":"objects/oFishy/oFishy.yy",},
+    {"name":"sprPlayerHurt","order":3,"path":"sprites/sprPlayerHurt/sprPlayerHurt.yy",},
+    {"name":"sprShadow","order":4,"path":"sprites/sprShadow/sprShadow.yy",},
     {"name":"oTextQueued","order":2,"path":"objects/oTextQueued/oTextQueued.yy",},
     {"name":"sprFishy","order":2,"path":"sprites/sprFishy/sprFishy.yy",},
     {"name":"sprCol","order":1,"path":"sprites/sprCol/sprCol.yy",},
