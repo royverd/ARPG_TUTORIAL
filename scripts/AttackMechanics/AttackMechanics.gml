@@ -32,6 +32,7 @@ function AttackSlash(){
 
 function CalculateAttack(_coll_spr){
 	
+	depth = bbox_top;
 	mask_index = _coll_spr;
 	
 	var _hitByAttackNow = ds_list_create();
