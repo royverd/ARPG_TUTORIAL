@@ -3,6 +3,7 @@
 playerState = PlayerStateFree;
 playerStateLast = playerState;
 playerStateAttack = AttackSlash;
+hitByAttack = EOF;
 skipStepEvent = false;
 
 collisionMap = layer_tilemap_get_id(layer_get_id("Collision"));

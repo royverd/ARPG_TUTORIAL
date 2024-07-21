@@ -44,20 +44,3 @@ function PlayerCollision(){
 	return _collision;
 }
 
-function AttackSlash(){
-	if (sprite_index != sprPlayerAttackSlash)
-	{
-		sprite_index = sprPlayerAttackSlash;
-		localFrame = 0;
-		image_index = 0;
-	}
-	
-	// Update Sprite
-	PlayerAnimateSprite();
-	
-	if (animationEnd)
-	{
-		playerState = PlayerStateFree;
-		animationEnd = false;
-	}
-}

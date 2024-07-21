@@ -12,3 +12,5 @@
 #macro DEFAULT_TBG_FRAME 1
 #macro ATTEMPT 2
 #macro FULL_CIRCLE 360
+#macro EOF -1
+#macro NULL 0
