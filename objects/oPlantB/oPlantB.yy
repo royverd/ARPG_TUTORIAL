@@ -7,6 +7,8 @@
   "overriddenProperties": [
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"pEntity","path":"objects/pEntity/pEntity.yy",},"propertyId":{"name":"entHitScript","path":"objects/pEntity/pEntity.yy",},"value":"EntityHitDestroy",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"pEntity","path":"objects/pEntity/pEntity.yy",},"propertyId":{"name":"entShadow","path":"objects/pEntity/pEntity.yy",},"value":"False",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"pEntity","path":"objects/pEntity/pEntity.yy",},"propertyId":{"name":"entFragmentCount","path":"objects/pEntity/pEntity.yy",},"value":"round(random_range(1,2))",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"pEntity","path":"objects/pEntity/pEntity.yy",},"propertyId":{"name":"entFragment","path":"objects/pEntity/pEntity.yy",},"value":"oFragPlant",},
   ],
   "parent": {
     "name": "Misc",

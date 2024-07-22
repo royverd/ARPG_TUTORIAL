@@ -45,6 +45,7 @@
   "resources": [
     {"id":{"name":"fText","path":"fonts/fText/fText.yy",},},
     {"id":{"name":"sprPlant","path":"sprites/sprPlant/sprPlant.yy",},},
+    {"id":{"name":"oFragPlant","path":"objects/oFragPlant/oFragPlant.yy",},},
     {"id":{"name":"oPlantB","path":"objects/oPlantB/oPlantB.yy",},},
     {"id":{"name":"sprVillageTiles","path":"sprites/sprVillageTiles/sprVillageTiles.yy",},},
     {"id":{"name":"sprPlayerRun","path":"sprites/sprPlayerRun/sprPlayerRun.yy",},},
@@ -60,6 +61,7 @@
     {"id":{"name":"sprPlayerAttackSlash","path":"sprites/sprPlayerAttackSlash/sprPlayerAttackSlash.yy",},},
     {"id":{"name":"sprPlayerRoll","path":"sprites/sprPlayerRoll/sprPlayerRoll.yy",},},
     {"id":{"name":"PlayerScripts","path":"scripts/PlayerScripts/PlayerScripts.yy",},},
+    {"id":{"name":"oFragment","path":"objects/oFragment/oFragment.yy",},},
     {"id":{"name":"oText","path":"objects/oText/oText.yy",},},
     {"id":{"name":"sprPlantB","path":"sprites/sprPlantB/sprPlantB.yy",},},
     {"id":{"name":"sprSignpost","path":"sprites/sprSignpost/sprSignpost.yy",},},
@@ -77,7 +79,9 @@
     {"id":{"name":"tCol","path":"tilesets/tCol/tCol.yy",},},
     {"id":{"name":"PlayerStateMachine","path":"scripts/PlayerStateMachine/PlayerStateMachine.yy",},},
     {"id":{"name":"AttackMechanics","path":"scripts/AttackMechanics/AttackMechanics.yy",},},
+    {"id":{"name":"rRiver","path":"rooms/rRiver/rRiver.yy",},},
     {"id":{"name":"oQuestNPC","path":"objects/oQuestNPC/oQuestNPC.yy",},},
+    {"id":{"name":"sprFragPlant","path":"sprites/sprFragPlant/sprFragPlant.yy",},},
     {"id":{"name":"pEntity","path":"objects/pEntity/pEntity.yy",},},
     {"id":{"name":"Text","path":"scripts/Text/Text.yy",},},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
@@ -87,6 +91,7 @@
     {"roomId":{"name":"rInit","path":"rooms/rInit/rInit.yy",},},
     {"roomId":{"name":"rRoot","path":"rooms/rRoot/rRoot.yy",},},
     {"roomId":{"name":"rVillage","path":"rooms/rVillage/rVillage.yy",},},
+    {"roomId":{"name":"rRiver","path":"rooms/rRiver/rRiver.yy",},},
   ],
   "templateType": "game",
   "TextureGroups": [

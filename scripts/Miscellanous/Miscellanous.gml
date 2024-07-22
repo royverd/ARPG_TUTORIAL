@@ -27,3 +27,34 @@ function InitText(_font, _hpos, _vpos, _color){
 	draw_set_valign(_vpos);
 	draw_set_color(_color);
 }
+	
+/// @function 
+/// @param _x
+/// @param _y
+/// @param _items_arr = [] Array of Items to Drop
+function DropItems(_x, _y, _items_arr){
+	
+	var _items = array_length_1d(_items_arr);
+
+	if (_items > 1)
+	{
+		var _anglePerItem = FULL_CIRCLE/_items;
+		var _angle = random(FULL_CIRCLE);
+		for (var _i = 0; _i < _items; _i++)
+		{
+			with (instance_create_layer(_x, _y, "Instances", _items_arr[_i]))
+			{
+				direction = _angle;
+				spd = 0.75 + (_items * 0.1) + random(0.1);
+			}
+			_angle += _anglePerItem;
+		}
+		
+		
+	}
+	else
+	{
+		instance_create_layer(_x, _y, "Instances", _items_arr[0]);
+	}
+
+}

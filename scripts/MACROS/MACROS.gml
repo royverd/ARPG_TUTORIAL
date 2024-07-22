@@ -14,3 +14,4 @@
 #macro FULL_CIRCLE 360
 #macro EOF -1
 #macro NULL 0
+#macro BOUNCE_HEIGHT_FALLOFF 0.6
