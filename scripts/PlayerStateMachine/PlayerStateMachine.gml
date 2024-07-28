@@ -37,27 +37,46 @@ function PlayerStateFree(){
 	{
 		
 		// 1 - Check for Entity
+		// 2 - No Entity or non-interactable Entity
+			// 2a - If Carrying Something, Throw
+			// 2b - Otherwise, Roll
+		// 3 - Interactable Entity
+		// 4 - If NPC Entity, Face Player
+		
+		// 1 - Check for Entity
 		var _activateX = lengthdir_x(INTERACTION_DISTANCE, direction);
 		var _activateY = lengthdir_y(INTERACTION_DISTANCE, direction);
 		
 		// Interaction Hitbox
-		//activate = instance_position(x + _activateX, y - INTERACTION_DISTANCE + _activateY, pEntity);
-		activate = collision_circle(x + _activateX, y - INTERACTION_DISTANCE + _activateY, INTERACTION_RADIUS, pEntity, false, true);
+		activate = instance_position(x + _activateX, y - INTERACTION_DISTANCE + _activateY, pEntity);
+		//activate = collision_circle(x + _activateX, y - INTERACTION_DISTANCE + _activateY, INTERACTION_RADIUS, pEntity, false, true);
 		
-		// 2 - No Entity or non-interactable Entity
-		if (activate == noone || activate.entActivateScript == -1)
+		// 2 - No Entity or non-interactable Entity 
+		if (activate == noone || activate.entActivateScript == -1 || global.iLifted != noone) //ALTERED
 		{
-			playerState = PlayerStateRoll; // Roll Instead
-			moveDistanceRemaining = distanceRoll;
+			// 2a - Throw if Carrying
+			if (global.iLifted != noone)
+			{
+				show_debug_message("ATTEMPTING THROW");
+				PlayerThrow();
+			}
+			else // 2b - Otherwise
+			{
+				playerState = PlayerStateRoll; // Roll Instead
+				moveDistanceRemaining = distanceRoll;
+			}
+
 		}
 		// 3 - Interactable Entity
 		else
 		{
+			show_debug_message("INTERACTABLE ENTITY");
 			script_execute_ext(activate.entActivateScript, activate.entActivateArgs);
 			
 			// 4 - If NPC Entity, Face Player
 			if (activate.entNPC)
 			{
+				show_debug_message("NPC");
 				with(activate)
 				{
 					direction = point_direction(x, y, other.x, other.y);
@@ -144,4 +163,21 @@ function PlayerStateTransition(){
 	// Update Image Index
 	PlayerAnimateSprite();
 	
+}
+	
+function PlayerStateAct(){
+	// Update Sprite
+	PlayerAnimateSprite();
+	
+	// If There is an Ending Animation
+	if (animationEnd)
+	{
+		state = PlayerStateFree;
+		animationEnd = false;
+		if (animationEndScript != -1)
+		{
+			script_execute(animationEndScript);
+			animationEndScript = EOF;
+		}
+	}
 }

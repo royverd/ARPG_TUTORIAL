@@ -8,7 +8,8 @@ global.textSpeed = 0.75;
 global.targetRoom = EOF;
 global.targetX = EOF;
 global.targetY = EOF;
-global.targetDirection = NULL; 
+global.targetDirection = NULL;
+global.iLifted = noone;
 
 global.insCamera = instance_create_layer(0, 0, layer, oCamera);
 

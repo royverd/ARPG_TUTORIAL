@@ -62,7 +62,6 @@ function DropItems(_x, _y, _items_arr){
 /// @function Handles All Transitions
 /// @param _type Type of Transition
 /// @param _target_room Room Transitioning to
-
 function RoomTransition(_type, _target_room){
 	
 	if (!instance_exists(oTransition))
@@ -78,6 +77,26 @@ function RoomTransition(_type, _target_room){
 	{
 		show_debug_message("Trying to Transition while another transition is occuring");
 		
+	}
+	
+}
+	
+/// @function Handles Liftable Instances
+/// @param _id The ID of the Instance Being Lifted
+function ActivateLiftable(_id){
+	
+	// If not Carrying Anything
+	if (global.iLifted == noone)
+	{
+		PlayerActOutAnimation(sprPlayerLift);
+		
+		global.iLifted = _id;
+		
+		with (global.iLifted)
+		{
+			lifted = true;
+			persistent = true;
+		}
 	}
 	
 }

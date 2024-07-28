@@ -7,6 +7,8 @@
 #macro IN 1
 #macro TRANSITION_SPEED 0.04
 #macro TRANSITION_OFFSET 20
+#macro FLASH_DURATION 0.04
+#macro CARRY_HEIGHT 13
 
 // Text
 #macro T_STROKE 8
@@ -16,8 +18,11 @@
 
 // Instances
 #macro INTERACTION_DISTANCE 5
-#macro INTERACTION_RADIUS 10
+#macro INTERACTION_RADIUS 5
 #macro BOUNCE_HEIGHT_FALLOFF 0.6
+#macro DEFAULT_THROW_DISTANCE 52
+#macro THROW_SPEED 3
+#macro THROW_GRAVITY 0.1
 
 // Hard Numbers
 #macro MAX 9999

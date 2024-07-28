@@ -25,6 +25,7 @@ spriteIdle = sprPlayer;
 spriteRoll = sprPlayerRoll;
 
 localFrame = 0;
+animationEndScript = EOF;
 
 if (global.targetX != EOF)
 {

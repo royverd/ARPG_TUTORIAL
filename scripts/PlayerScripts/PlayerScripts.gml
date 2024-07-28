@@ -98,3 +98,43 @@ function PlayerCollision(){
 	return _collision;
 }
 
+function PlayerActOutAnimation(_sprite, _end_script = EOF){
+
+	//Carry out an Animation and Optionally Carry out a Script When the Animation Ends
+
+	state = PlayerStateAct;
+
+	sprite_index = _sprite;
+
+	animationEndScript = _end_script;
+
+	localFrame = 0;
+
+	image_index = 0;
+
+	PlayerAnimateSprite();
+
+}
+	
+function PlayerThrow(){
+
+	with (global.iLifted)
+	{
+		lifted = false;
+		persistent = false;
+		thrown = true;
+		z = CARRY_HEIGHT;
+		throwPeakHeight = z + 10;
+		throwDistance = entThrowDistance;
+		throwDistanceTravelled = PERCENT_START;
+		throwStartPercent = (CARRY_HEIGHT / throwPeakHeight) * HALF;
+		throwPercent = throwStartPercent;
+		direction = other.direction;
+		xstart = x;
+		ystart = y;
+	}
+	
+	PlayerActOutAnimation(sprPlayerLift);
+	global.iLifted = noone;
+	
+}

@@ -39,6 +39,8 @@
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"entHitScript","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"EOF","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"entFragmentCount","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"entFragment","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"EOF","varType":0,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"entThrowBreak","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"False","varType":3,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"entThrowDistance","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"DEFAULT_THROW_DISTANCE","varType":0,},
   ],
   "solid": false,
   "spriteId": null,
