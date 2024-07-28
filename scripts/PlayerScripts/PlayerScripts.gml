@@ -126,7 +126,7 @@ function PlayerThrow(){
 		z = CARRY_HEIGHT;
 		throwPeakHeight = z + 10;
 		throwDistance = entThrowDistance;
-		throwDistanceTravelled = PERCENT_START;
+		throwDistanceTravelled = PROGRESS_PERCENTAGE_ZERO;
 		throwStartPercent = (CARRY_HEIGHT / throwPeakHeight) * HALF;
 		throwPercent = throwStartPercent;
 		direction = other.direction;

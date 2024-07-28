@@ -5,6 +5,7 @@ function AttackSlash(){
 	// Attack Initiated
 	if (sprite_index != sprPlayerAttackSlash)
 	{
+		show_debug_message("ATTACK: SLASHING");
 		// Handle Animation
 		sprite_index = sprPlayerAttackSlash;
 		localFrame = 0;
@@ -78,6 +79,6 @@ function EntityHitDestroy(){
 
 function EntityHitSolid(){
 
-	flash = 0.5
+	flash = FLASH_DURATION
 
 }

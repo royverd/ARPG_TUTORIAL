@@ -2,6 +2,7 @@
 
 if (entFragmentCount > NULL)
 {
+	show_debug_message("*DROPPED FRAGMENTS*");
 	fragmentArray = array_create(entFragmentCount, entFragment);
 	DropItems(x, y, fragmentArray);
 }

@@ -43,16 +43,44 @@ function PlayerStateFree(){
 		// 3 - Interactable Entity
 		// 4 - If NPC Entity, Face Player
 		
-		// 1 - Check for Entity
-		var _activateX = lengthdir_x(INTERACTION_DISTANCE, direction);
-		var _activateY = lengthdir_y(INTERACTION_DISTANCE, direction);
+		// 1 - Check for Entities
+		activate = noone;
+		var _activateX = x + lengthdir_x(INTERACTION_DISTANCE, direction);
+		var _activateY = y + lengthdir_y(INTERACTION_DISTANCE, direction);
+		var _activateSize = INTERACTION_RADIUS
+		var _activateList = ds_list_create();
+		var _entitiesFound = collision_rectangle_list( // For Radius = 4, 8x8 Rectangle
+			_activateX - _activateSize,
+			_activateY - _activateSize,
+			_activateX + _activateSize,
+			_activateY + _activateSize,
+			pEntity,
+			false,
+			true,
+			_activateList,
+			true
+			);
 		
-		// Interaction Hitbox
-		activate = instance_position(x + _activateX, y - INTERACTION_DISTANCE + _activateY, pEntity);
+		// If First Instance is the Lifted Entity OR has no Script, Iterate List
+		while (_entitiesFound > 0)
+		{
+			var _check = _activateList[| --_entitiesFound];
+			
+			if (_check != global.iLifted) && (_check.entActivateScript != EOF)
+			{
+				activate = _check;
+				break;
+			}
+		}
+		
+		
+		ds_list_destroy(_activateList);
+		
+		// Alternative Radial Check
 		//activate = collision_circle(x + _activateX, y - INTERACTION_DISTANCE + _activateY, INTERACTION_RADIUS, pEntity, false, true);
 		
 		// 2 - No Entity or non-interactable Entity 
-		if (activate == noone || activate.entActivateScript == -1 || global.iLifted != noone) //ALTERED
+		if (activate == noone)
 		{
 			// 2a - Throw if Carrying
 			if (global.iLifted != noone)
@@ -62,6 +90,7 @@ function PlayerStateFree(){
 			}
 			else // 2b - Otherwise
 			{
+				show_debug_message("ROLLING");
 				playerState = PlayerStateRoll; // Roll Instead
 				moveDistanceRemaining = distanceRoll;
 			}

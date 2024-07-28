@@ -55,7 +55,14 @@ if (!global.gamePaused)
 	}
 }
 
-flash = max(flash - FLASH_DURATION, 0);
+if (flash == FLASH_DURATION)
+{
+	show_debug_message("ENTITY HIT");
+	flash = max(flash - FLASH_DECAY, 0);
+	
+} else if (flash != PROGRESS_PERCENTAGE_ZERO) flash = max(flash - FLASH_DECAY, 0);
+
+	
 
 
 
