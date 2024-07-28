@@ -28,7 +28,7 @@ function InitText(_font, _hpos, _vpos, _color){
 	draw_set_color(_color);
 }
 	
-/// @function 
+/// @function Handles All Instance Drops
 /// @param _x
 /// @param _y
 /// @param _items_arr = [] Array of Items to Drop
@@ -57,4 +57,27 @@ function DropItems(_x, _y, _items_arr){
 		instance_create_layer(_x, _y, "Instances", _items_arr[0]);
 	}
 
+}
+	
+/// @function Handles All Transitions
+/// @param _type Type of Transition
+/// @param _target_room Room Transitioning to
+
+function RoomTransition(_type, _target_room){
+	
+	if (!instance_exists(oTransition))
+	{
+		with (instance_create_depth(0, 0, -9999, oTransition))
+		{
+			type = _type;
+			targetRoom = _target_room;
+			
+		}
+	}
+	else
+	{
+		show_debug_message("Trying to Transition while another transition is occuring");
+		
+	}
+	
 }

@@ -1,17 +1,40 @@
-#macro FRAME_RATE 60
-#macro TILE_SIZE 16
-#macro CARDINAL_DIR round(direction/90)
-#macro ROOM_START rVillage
+
+// Graphics
 #macro RESOLUTION_W 320
 #macro RESOLUTION_H 180
-#macro CAM_OFF 15
+#macro FRAME_RATE 60
+#macro OUT 0
+#macro IN 1
+#macro TRANSITION_SPEED 0.04
+#macro TRANSITION_OFFSET 20
+
+// Text
 #macro T_STROKE 8
 #macro T_ISTROKE 1
-#macro INTERACTION_DISTANCE 10
 #macro TEXT_BOX_HEIGHT 70
 #macro DEFAULT_TBG_FRAME 1
-#macro ATTEMPT 2
+
+// Instances
+#macro INTERACTION_DISTANCE 5
+#macro INTERACTION_RADIUS 10
+#macro BOUNCE_HEIGHT_FALLOFF 0.6
+
+// Hard Numbers
+#macro MAX 9999
+#macro MIN -9999
+#macro PERCENT_START 0
+#macro PERCENT_END 1
+#macro CARDINAL_DIR round(direction/90)
 #macro FULL_CIRCLE 360
 #macro EOF -1
 #macro NULL 0
-#macro BOUNCE_HEIGHT_FALLOFF 0.6
+#macro HALF 0.5
+
+// Miscellanous
+#macro TILE_SIZE 16
+#macro ROOM_START rVillage
+#macro CAM_OFF 15
+#macro ATTEMPT 2
+
+
+

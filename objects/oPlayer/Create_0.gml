@@ -26,6 +26,14 @@ spriteRoll = sprPlayerRoll;
 
 localFrame = 0;
 
+if (global.targetX != EOF)
+{
+	x = global.targetX;
+	y = global.targetY;
+	direction = global.targetDirection;
+	
+}
+
 
 
 

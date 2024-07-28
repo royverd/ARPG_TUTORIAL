@@ -39,7 +39,10 @@ function PlayerStateFree(){
 		// 1 - Check for Entity
 		var _activateX = lengthdir_x(INTERACTION_DISTANCE, direction);
 		var _activateY = lengthdir_y(INTERACTION_DISTANCE, direction);
-		activate = instance_position(x + _activateX, y - INTERACTION_DISTANCE + _activateY, pEntity);
+		
+		// Interaction Hitbox
+		//activate = instance_position(x + _activateX, y - INTERACTION_DISTANCE + _activateY, pEntity);
+		activate = collision_circle(x + _activateX, y - INTERACTION_DISTANCE + _activateY, INTERACTION_RADIUS, pEntity, false, true);
 		
 		// 2 - No Entity or non-interactable Entity
 		if (activate == noone || activate.entActivateScript == -1)
@@ -132,4 +135,13 @@ function PlayerStateLocked(){
 	
 function PlayerStateAttack(){
 	script_execute(playerStateAttack);
+}
+
+function PlayerStateTransition(){
+	// Movement
+	PlayerCollision();
+	
+	// Update Image Index
+	PlayerAnimateSprite();
+	
 }
