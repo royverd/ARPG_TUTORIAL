@@ -25,16 +25,25 @@
 #macro THROW_SPEED 3
 #macro THROW_GRAVITY 0.1
 
+// Enemies
+#macro ENEMY_WANDER_RADIUS 32
+#macro ENEMY_DEFAULT_SPEED 0.35
+#macro DEFAULT_ENEMY_WAIT_DUR 120
+
 // Hard Numbers
 #macro MAX 9999
 #macro MIN -9999
 #macro PROGRESS_PERCENTAGE_ZERO 0
 #macro PROGRESS_PERCENTAGE_ONE 1
-#macro CARDINAL_DIR round(direction/90)
-#macro FULL_CIRCLE 360
 #macro EOF -1
 #macro NULL 0
 #macro HALF 0.5
+
+// Geometric
+#macro CARDINAL_DIR round(direction/90)
+#macro FULL_CIRCLE 360
+#macro RIGHT_ANGLE 90
+#macro HALF_ANGLE 45
 
 // Miscellanous
 #macro TILE_SIZE 16
@@ -42,5 +51,17 @@
 #macro CAM_OFF 15
 #macro ATTEMPT 2
 
+// Enums
 
+enum ENEMYSTATE
+{
+	IDLE,
+	WANDER,
+	CHASE,
+	ATTACK,
+	HURT,
+	DIE,
+	WAIT,
+	COUNT // HAS TO BE LAST
+}
 
