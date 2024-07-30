@@ -36,6 +36,7 @@
     {"name":"rRoot","order":1,"path":"rooms/rRoot/rRoot.yy",},
     {"name":"oTransition","order":2,"path":"objects/oTransition/oTransition.yy",},
     {"name":"EnemyScripts","order":6,"path":"scripts/EnemyScripts/EnemyScripts.yy",},
+    {"name":"sprSlimeAttack","order":1,"path":"sprites/sprSlimeAttack/sprSlimeAttack.yy",},
     {"name":"rRiver","order":3,"path":"rooms/rRiver/rRiver.yy",},
     {"name":"pEnemy","order":2,"path":"objects/pEnemy/pEnemy.yy",},
     {"name":"tVillageTiles","order":1,"path":"tilesets/tVillageTiles/tVillageTiles.yy",},

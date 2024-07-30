@@ -3,7 +3,7 @@
 if (!global.gamePaused)
 {
 	if (enemyScript[state] != EOF) script_execute(enemyScript[state])
-	depth = -bbox_bottom
+	depth = -bbox_bottom;
 }
 
 

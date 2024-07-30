@@ -1,4 +1,46 @@
 
+
+function EnemyTileCollision() {
+	var _collision = false;
+	
+	// Horizontal
+	if (tilemap_get_at_pixel(collisionMap, x + hSpeed, y))
+	{
+		x -= x mod TILE_SIZE;
+		if (sign(hSpeed) == 1) x += TILE_SIZE - 1;
+		hSpeed = 0;
+		_collision = true;
+	}
+	
+	// Horizontal Move Commit
+	x += hSpeed;
+	
+	// Vertical
+	if (tilemap_get_at_pixel(collisionMap, x, y + vSpeed))
+	{
+		y -= y mod TILE_SIZE;
+		if (sign(vSpeed) == 1) y += TILE_SIZE - 1;
+		vSpeed = 0;
+		_collision = true;
+	}
+	
+	// Vertical Move Commit
+	y += vSpeed;
+	
+	return _collision;
+}
+	
+function EnemyWait() {
+	
+	if (++stateWait >= stateWaitDuration)
+	{
+		stateWait = 0;
+		state = stateTarget;
+		
+	}
+	
+}
+	
 function SlimeWander() {
 	
 	sprite_index = sprMove;
@@ -43,35 +85,117 @@ function SlimeWander() {
 		
 		
 	}
+	
+	// Check for Aggro
+	if (++aggroCheck >= aggroCheckDuration)
+	{
+		aggroCheck = 0;
+		
+		if (instance_exists(oPlayer)) && (point_distance(x, y, oPlayer.x, oPlayer.y) <= enemyAggroRadius)
+		{
+				state = ENEMYSTATE.CHASE;
+				target = oPlayer;
+				
+			
+		}
+	}
 
 }
+
+function SlimeChase() {
 	
-function EnemyTileCollision() {
-	var _collision = false;
+	// Initialize Chase
 	
-	// Horizontal
-	if (tilemap_get_at_pixel(collisionMap, x + hSpeed, y))
+	sprite_index = sprMove;
+	
+	if (instance_exists(target))
 	{
-		x -= x mod TILE_SIZE;
-		if (sign(hSpeed) == 1) x += TILE_SIZE - 1;
-		hSpeed = 0;
-		_collision = true;
+		
+		xTo = target.x;
+		yTo = target.y;
+		
+		var _distanceToGo = point_distance(x, y, xTo, yTo);
+		image_speed = 1.0;
+		dir = point_direction(x, y, xTo, yTo);
+		if (_distanceToGo > enemySpeed)
+		{
+			hSpeed = lengthdir_x(enemySpeed, dir);
+			vSpeed = lengthdir_y(enemySpeed, dir);
+		}
+		else
+		{
+			hSpeed = lengthdir_x(_distanceToGo, dir);
+			vSpeed = lengthdir_y(_distanceToGo, dir);
+		}
+		
+		if (hSpeed != 0) image_xscale = sign(hSpeed);
+		
+		// Actual Movement & Collision
+		EnemyTileCollision();
 	}
 	
-	// Horizontal Move Commit
-	x += hSpeed;
+	// Check if At Attack Range
 	
-	// Vertical
-	if (tilemap_get_at_pixel(collisionMap, x, y + vSpeed))
+	if (instance_exists(target)) && (point_distance(x, y, target.x, target.y) <= enemyAttackRadius)
 	{
-		y -= y mod TILE_SIZE;
-		if (sign(vSpeed) == 1) y += TILE_SIZE - 1;
-		vSpeed = 0;
-		_collision = true;
+		state = ENEMYSTATE.ATTACK;
+		sprite_index = sprAttack;
+		image_index = 0;
+		image_speed = 1.0;
+		
+		// Target xPixels Past Player
+		
+		xTo += lengthdir_x(ENEMY_ATTACK_OFFSET, dir);
+		yTo += lengthdir_y(ENEMY_ATTACK_OFFSET, dir);
+		
 	}
 	
-	// Vertical Move Commit
-	y += vSpeed;
+}
+
+function SlimeAttack() {
 	
-	return _collision;
+	// Movement Speed
+	var _spd = enemySpeed * 2;
+	
+	// Don't Move While Attacking
+	if (image_index < 2) _spd = 0;
+	
+	// Freeze Animation Mid-air and at Landing
+	if (floor(image_index) == 3) || (floor(image_index == 5)) image_speed = 0;
+	
+	// Jump Range
+	var _distanceToGo = point_distance(x, y, xTo, yTo);
+	
+	// Begin Landing End of the Animation Once we are Nearly Done
+	if (_distanceToGo < 4) && (image_index < 5) image_speed = 1.0;
+	
+	// Move
+	if (_distanceToGo > _spd)
+	{
+		dir = point_direction(x, y, xTo, yTo);
+		hSpeed = lengthdir_x(_spd, dir);
+		vSpeed = lengthdir_y(_spd, dir);
+		if (hSpeed != 0) image_xscale = sign(hSpeed);
+		
+		// Commit Movement & Collision Check
+		
+		if (EnemyTileCollision() == true)
+		{
+			xTo = x;
+			yTo = y;
+			
+		}
+	}
+	else
+	{
+		x = xTo;
+		y = yTo;
+		if (floor(image_index) == 5)
+		{
+			stateTarget = ENEMYSTATE.CHASE;
+			stateWaitDuration = DEFAULT_ENEMY_STATE_WAIT_DURATION;
+			state = ENEMYSTATE.WAIT;
+		}	
+		
+	}
 }

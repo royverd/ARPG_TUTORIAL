@@ -32,6 +32,8 @@
   "properties": [
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"enemyWanderDistance","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"ENEMY_WANDER_RADIUS","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"enemySpeed","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"ENEMY_DEFAULT_SPEED","varType":0,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"enemyAggroRadius","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"ENEMY_DEFAULT_RADIUS","varType":0,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"enemyAttackRadius","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"ENEMY_DEFAULT_ATTACK_RADIUS","varType":0,},
   ],
   "solid": false,
   "spriteId": null,

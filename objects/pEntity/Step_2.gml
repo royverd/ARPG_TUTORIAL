@@ -11,7 +11,7 @@ if (!global.gamePaused)
 			x = oPlayer.x;
 			y = oPlayer.y;
 			z = CARRY_HEIGHT;
-			depth = oPlayer.depth-1;
+			depth = oPlayer.depth - 1;
 		}
 	}
 	

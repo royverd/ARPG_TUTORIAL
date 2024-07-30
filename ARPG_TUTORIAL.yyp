@@ -56,6 +56,7 @@
     {"id":{"name":"rRoot","path":"rooms/rRoot/rRoot.yy",},},
     {"id":{"name":"oTransition","path":"objects/oTransition/oTransition.yy",},},
     {"id":{"name":"EnemyScripts","path":"scripts/EnemyScripts/EnemyScripts.yy",},},
+    {"id":{"name":"sprSlimeAttack","path":"sprites/sprSlimeAttack/sprSlimeAttack.yy",},},
     {"id":{"name":"rRiver","path":"rooms/rRiver/rRiver.yy",},},
     {"id":{"name":"pEnemy","path":"objects/pEnemy/pEnemy.yy",},},
     {"id":{"name":"tVillageTiles","path":"tilesets/tVillageTiles/tVillageTiles.yy",},},
