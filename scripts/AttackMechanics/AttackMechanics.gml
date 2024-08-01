@@ -53,8 +53,13 @@ function CalculateAttack(_coll_spr){
 				// Activation Logic
 				with(_hitID){
 					
+					if (object_is_ancestor(object_index, pEnemy))
+					{
+						HurtEnemy(id, PLAYER_SWIPE_ATTACK_DAMAGE, other.id, PLAYER_SWIPE_ATTACK_KNOCKBACK);
+						
+					}
 					//image_blend = c_red;
-					if (entHitScript != EOF) script_execute(entHitScript);
+					else if (entHitScript != EOF) script_execute(entHitScript);
 					
 				}
 			}
@@ -81,4 +86,48 @@ function EntityHitSolid(){
 
 	flash = FLASH_DURATION
 
+}
+	
+/// @function Attack Interactable Entity
+/// @param _enemy What Entity to Hit
+/// @param _damage Amount of DMG to Deal
+/// @param _source Where the DMG Comes From
+/// @param _knockback Amount of Knockback to Apply
+
+function HurtEnemy(_enemy, _damage, _source, _knockback){
+	
+	with (_enemy)
+	{
+		if (state != ENEMYSTATE.DIE)
+		{
+			enemyHP -= _damage;
+			flash = PROGRESS_PERCENTAGE_ONE;
+			
+			// Hurt OR Dead
+			if (enemyHP <= 0)
+			{
+				state = ENEMYSTATE.DIE;	
+				
+			}
+			else
+			{
+				if (state != ENEMYSTATE.HURT) statePrevious = state;
+				state = ENEMYSTATE.HURT;
+			}
+			
+			image_index = 0; // Reset Sprite Animation
+			
+			if (_knockback != 0)
+			{
+				var _knockDirection = point_direction(x, y, (_source).x, (_source).y);
+				xTo = x - lengthdir_x(_knockback, _knockDirection);
+				yTo = y - lengthdir_y(_knockback, _knockDirection);
+				
+				
+			}
+			
+		}
+	}
+	
+	
 }
