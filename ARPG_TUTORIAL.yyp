@@ -46,6 +46,7 @@
   "resources": [
     {"id":{"name":"fText","path":"fonts/fText/fText.yy",},},
     {"id":{"name":"sprPlant","path":"sprites/sprPlant/sprPlant.yy",},},
+    {"id":{"name":"sprHealth","path":"sprites/sprHealth/sprHealth.yy",},},
     {"id":{"name":"oFragPlant","path":"objects/oFragPlant/oFragPlant.yy",},},
     {"id":{"name":"oPlantB","path":"objects/oPlantB/oPlantB.yy",},},
     {"id":{"name":"sprVillageTiles","path":"sprites/sprVillageTiles/sprVillageTiles.yy",},},
@@ -80,6 +81,7 @@
     {"id":{"name":"oFishy","path":"objects/oFishy/oFishy.yy",},},
     {"id":{"name":"sprPlayerAttackSlashHB","path":"sprites/sprPlayerAttackSlashHB/sprPlayerAttackSlashHB.yy",},},
     {"id":{"name":"shWhiteFlash","path":"shaders/shWhiteFlash/shWhiteFlash.yy",},},
+    {"id":{"name":"oUI","path":"objects/oUI/oUI.yy",},},
     {"id":{"name":"sprPlayerLift","path":"sprites/sprPlayerLift/sprPlayerLift.yy",},},
     {"id":{"name":"sprPlayerHurt","path":"sprites/sprPlayerHurt/sprPlayerHurt.yy",},},
     {"id":{"name":"sprShadow","path":"sprites/sprShadow/sprShadow.yy",},},

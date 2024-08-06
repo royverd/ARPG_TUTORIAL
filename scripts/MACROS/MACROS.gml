@@ -28,6 +28,8 @@
 // Player
 #macro PLAYER_SWIPE_ATTACK_DAMAGE 5
 #macro PLAYER_SWIPE_ATTACK_KNOCKBACK 10
+#macro DEFAULT_PLAYER_HP 3.25
+#macro DEFAULT_PLAYER_HP_MAX 5
 
 // Enemies
 #macro DEFAULT_ENEMY_HP 50
@@ -48,6 +50,7 @@
 #macro EOF -1
 #macro NULL 0
 #macro HALF 0.5
+#macro QUARTER 0.25
 
 // Geometric
 #macro CARDINAL_DIR round(direction/90)

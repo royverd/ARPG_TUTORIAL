@@ -26,6 +26,7 @@
   ],
   "ResourceOrderSettings": [
     {"name":"sprPlant","order":1,"path":"sprites/sprPlant/sprPlant.yy",},
+    {"name":"sprHealth","order":8,"path":"sprites/sprHealth/sprHealth.yy",},
     {"name":"oFragPlant","order":3,"path":"objects/oFragPlant/oFragPlant.yy",},
     {"name":"oPlantB","order":2,"path":"objects/oPlantB/oPlantB.yy",},
     {"name":"sprVillageTiles","order":2,"path":"sprites/sprVillageTiles/sprVillageTiles.yy",},
@@ -51,6 +52,7 @@
     {"name":"sprSlimeHurt","order":3,"path":"sprites/sprSlimeHurt/sprSlimeHurt.yy",},
     {"name":"oFishy","order":3,"path":"objects/oFishy/oFishy.yy",},
     {"name":"sprPlayerAttackSlashHB","order":3,"path":"sprites/sprPlayerAttackSlashHB/sprPlayerAttackSlashHB.yy",},
+    {"name":"oUI","order":3,"path":"objects/oUI/oUI.yy",},
     {"name":"sprPlayerLift","order":5,"path":"sprites/sprPlayerLift/sprPlayerLift.yy",},
     {"name":"sprPlayerHurt","order":2,"path":"sprites/sprPlayerHurt/sprPlayerHurt.yy",},
     {"name":"sprShadow","order":3,"path":"sprites/sprShadow/sprShadow.yy",},
