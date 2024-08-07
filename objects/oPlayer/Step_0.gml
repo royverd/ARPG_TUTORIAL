@@ -22,7 +22,13 @@ return;
 
 }
 // Do Step
-if (!global.gamePaused) script_execute(playerState);
+if (!global.gamePaused)
+{
+	script_execute(playerState);
+	invulnerable = max(invulnerable - 1, 0);
+	flash = max(flash - 0.5, 0);
+	
+}
 
 // Set player Depth to Highest
 depth = -bbox_bottom;

@@ -138,3 +138,38 @@ function PlayerThrow(){
 	global.iLifted = noone;
 	
 }
+	
+/// @function Deal Damage to Player's 
+/// @param _direction What direction the damage is coming from
+/// @param _force The amount of knockback inflicted
+/// @param _damage Amount of damage to be dealt
+	
+function HurtPlayer(_direction, _force, _damage){
+	
+	if (oPlayer.invulnerable <= 0)
+	{
+		global.playerHealth = max(0, global.playerHealth - _damage);
+		
+		if (global.playerHealth > 0)
+		{
+			with (oPlayer)
+			{
+				playerState = PlayerStateBonk;
+				direction = _direction - FULL_CIRCLE / 2;
+				moveDistanceRemaining = _force;
+				ScreenShake(2, 10);
+				flash = 0.7;
+				invulnerable = 60;
+				flashShader = shRedFlash;
+				
+			}
+		}
+		else
+		{
+			// Kill Player	
+			
+		}
+		
+	}
+	
+}

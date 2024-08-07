@@ -58,6 +58,7 @@
     {"name":"sprShadow","order":3,"path":"sprites/sprShadow/sprShadow.yy",},
     {"name":"oTextQueued","order":2,"path":"objects/oTextQueued/oTextQueued.yy",},
     {"name":"sprFishy","order":4,"path":"sprites/sprFishy/sprFishy.yy",},
+    {"name":"shRedFlash","order":2,"path":"shaders/shRedFlash/shRedFlash.yy",},
     {"name":"oRoomTransition","order":4,"path":"objects/oRoomTransition/oRoomTransition.yy",},
     {"name":"sprCol","order":1,"path":"sprites/sprCol/sprCol.yy",},
     {"name":"sprPlayer","order":7,"path":"sprites/sprPlayer/sprPlayer.yy",},

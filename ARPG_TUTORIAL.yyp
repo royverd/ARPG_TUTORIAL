@@ -87,6 +87,7 @@
     {"id":{"name":"sprShadow","path":"sprites/sprShadow/sprShadow.yy",},},
     {"id":{"name":"oTextQueued","path":"objects/oTextQueued/oTextQueued.yy",},},
     {"id":{"name":"sprFishy","path":"sprites/sprFishy/sprFishy.yy",},},
+    {"id":{"name":"shRedFlash","path":"shaders/shRedFlash/shRedFlash.yy",},},
     {"id":{"name":"oRoomTransition","path":"objects/oRoomTransition/oRoomTransition.yy",},},
     {"id":{"name":"sprCol","path":"sprites/sprCol/sprCol.yy",},},
     {"id":{"name":"sprPlayer","path":"sprites/sprPlayer/sprPlayer.yy",},},

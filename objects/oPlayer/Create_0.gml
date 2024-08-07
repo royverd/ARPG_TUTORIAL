@@ -5,6 +5,10 @@ playerStateLast = playerState;
 playerStateAttack = AttackSlash;
 hitByAttack = EOF;
 skipStepEvent = false;
+invulnerable = PLAYER_INVULNERABLE_DUR;
+flash = 0;
+flashShader =shWhiteFlash;
+animationEndScript = EOF;
 
 collisionMap = layer_tilemap_get_id(layer_get_id("Collision"));
 
