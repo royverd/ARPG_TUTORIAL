@@ -144,7 +144,7 @@ function PlayerThrow(){
 /// @param _force The amount of knockback inflicted
 /// @param _damage Amount of damage to be dealt
 	
-function HurtPlayer(_direction, _force, _damage){
+	function HurtPlayer(_direction, _force, _damage){
 	
 	if (oPlayer.invulnerable <= 0)
 	{
@@ -154,7 +154,7 @@ function HurtPlayer(_direction, _force, _damage){
 		{
 			with (oPlayer)
 			{
-				playerState = PlayerStateBonk;
+				state = PlayerStateBonk;
 				direction = _direction - FULL_CIRCLE / 2;
 				moveDistanceRemaining = _force;
 				ScreenShake(2, 10);
@@ -166,7 +166,11 @@ function HurtPlayer(_direction, _force, _damage){
 		}
 		else
 		{
-			// Kill Player	
+			// Kill Player
+			with (oPlayer)
+			{
+				state = PlayerStateDead;	
+			}
 			
 		}
 		

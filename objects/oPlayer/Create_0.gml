@@ -1,13 +1,13 @@
 /// @description Player Creation Logic
 
-playerState = PlayerStateFree;
-playerStateLast = playerState;
-playerStateAttack = AttackSlash;
+state = PlayerStateFree;
+stateLast = state;
+stateAttack = AttackSlash;
 hitByAttack = EOF;
 skipStepEvent = false;
 invulnerable = PLAYER_INVULNERABLE_DUR;
 flash = 0;
-flashShader =shWhiteFlash;
+flashShader = shWhiteFlash;
 animationEndScript = EOF;
 
 collisionMap = layer_tilemap_get_id(layer_get_id("Collision"));

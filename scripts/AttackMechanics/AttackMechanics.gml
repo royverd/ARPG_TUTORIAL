@@ -23,7 +23,7 @@ function AttackSlash(){
 	
 	if (animationEnd)
 	{
-		playerState = PlayerStateFree;
+		state = PlayerStateFree;
 		animationEnd = false;
 	}
 }

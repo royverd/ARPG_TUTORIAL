@@ -42,10 +42,10 @@ function NewTextBox(_message, _background = 1, _responses_arr = [-1]){
 	
 	with (oPlayer)
 	{
-		if (playerState != PlayerStateLocked)
+		if (state != PlayerStateLocked)
 		{
-			lastState = playerState;
-			playerState = PlayerStateLocked;
+			lastState = state;
+			state = PlayerStateLocked;
 		}
 	}
 	

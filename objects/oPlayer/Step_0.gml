@@ -17,14 +17,13 @@ inputMagnitude = (keyRight - keyLeft != 0) || (keyDown - keyUp != 0);
 if(skipStepEvent){
 
 skipStepEvent = false;
-
 return;
 
 }
 // Do Step
 if (!global.gamePaused)
 {
-	script_execute(playerState);
+	script_execute(state);
 	invulnerable = max(invulnerable - 1, 0);
 	flash = max(flash - 0.5, 0);
 	

@@ -27,7 +27,7 @@ function PlayerStateFree(){
 	// Attack Logic
 	if (keyAttack)
 	{
-		playerState = PlayerStateAttack;
+		state = PlayerStateAttack;
 		PlayerStateAttack = AttackSlash;
 	}
 	
@@ -91,7 +91,7 @@ function PlayerStateFree(){
 			else // 2b - Otherwise
 			{
 				show_debug_message("ROLLING");
-				playerState = PlayerStateRoll; // Roll Instead
+				state = PlayerStateRoll; // Roll Instead
 				moveDistanceRemaining = distanceRoll;
 			}
 
@@ -135,13 +135,13 @@ function PlayerStateRoll(){
 	// Change State
 	if (moveDistanceRemaining <= 0)
 	{
-		playerState = PlayerStateFree;
+		state = PlayerStateFree;
 	}
 	
 	// Collision Interactions
 	if (_collided)
 	{
-		playerState = PlayerStateBonk;
+		state = PlayerStateBonk;
 		moveDistanceRemaining = distanceBonk;
 		ScreenShake( 3, 30);
 	}
@@ -168,7 +168,7 @@ function PlayerStateBonk(){
 	// Change State
 	if (moveDistanceRemaining <= 0)
 	{
-		playerState = PlayerStateFree;
+		state = PlayerStateFree;
 	}
 	
 }
@@ -182,7 +182,7 @@ function PlayerStateLocked(){
 }
 	
 function PlayerStateAttack(){
-	script_execute(playerStateAttack);
+	script_execute(stateAttack);
 }
 
 function PlayerStateTransition(){
@@ -207,6 +207,44 @@ function PlayerStateAct(){
 		{
 			script_execute(animationEndScript);
 			animationEndScript = EOF;
+		}
+	}
+}
+	
+function PlayerStateDead(){
+	hSpeed = 0;
+	vSpeed = 0;
+	
+	// If Entering State
+	if (sprite_index != sprPlayerDie) && (sprite_index != sprPlayerDead)
+	{
+		// Update Sprite
+		sprite_index = sprPlayerDie;
+		image_index = 0;
+		image_speed = 0.7; // Gradual Fade Spin
+
+	}
+	
+	// Animation End Frame Check
+	if (image_index + image_speed > image_number)
+	{
+		if (sprite_index == sprPlayerDie)
+		{
+			image_speed = max(0, image_speed - 0.03);
+			if (image_speed < 0.07)
+			{
+				image_index = 0;
+				sprite_index = sprPlayerDead;
+				image_speed = 1.0;
+			}
+		}
+		else
+		{
+			image_speed = 0;
+			image_index = image_number - 1;
+			global.targetX = EOF;
+			global.targetY = EOF;
+			RoomTransition(TRANSITION_TYPE.SLIDE, rVillage);	
 		}
 	}
 }

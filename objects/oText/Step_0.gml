@@ -42,7 +42,7 @@ if (keyboard_check_pressed(vk_space))
 		{
 			with (oPlayer)
 			{
-				playerState = playerStateLast;
+				state = stateLast;
 				skipStepEvent = true // In order to not re-open text in the same frame
 			}
 		}
