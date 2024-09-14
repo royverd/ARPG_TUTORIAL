@@ -100,6 +100,8 @@
     {"name":"inst_375F356E","path":"rooms/rRiver/rRiver.yy",},
     {"name":"inst_431BF309","path":"rooms/rRiver/rRiver.yy",},
     {"name":"inst_2D974C1F","path":"rooms/rRiver/rRiver.yy",},
+    {"name":"inst_5D906D56","path":"rooms/rRiver/rRiver.yy",},
+    {"name":"inst_34CEB3CE","path":"rooms/rRiver/rRiver.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -202,6 +204,8 @@
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oRoomTransition","path":"objects/oRoomTransition/oRoomTransition.yy",},"propertyId":{"name":"targetX","path":"objects/oRoomTransition/oRoomTransition.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"632",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.5,"scaleY":1.5,"x":-16.0,"y":560.0,},
         {"$GMRInstance":"v1","%Name":"inst_2D974C1F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2D974C1F","objectId":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":16.0,"y":592.0,},
+        {"$GMRInstance":"v1","%Name":"inst_5D906D56","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5D906D56","objectId":{"name":"oHat","path":"objects/oHat/oHat.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":112.0,"y":576.0,},
+        {"$GMRInstance":"v1","%Name":"inst_34CEB3CE","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_34CEB3CE","objectId":{"name":"oSlime","path":"objects/oSlime/oSlime.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":160.0,"y":256.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Collision","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Collision","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":40,"SerialiseWidth":20,"TileCompressedData":[
           -29,1,-3,0,-10,1,-16,0,-4,1,-16,0,4,1,0,1,1,-16,0,4,1,0,1,1,-15,0,5,1,0,0,1,1,-14,0,-2,1,-2,0,-2,1,-13,

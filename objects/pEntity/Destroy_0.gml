@@ -7,5 +7,8 @@ if (entFragmentCount > NULL)
 	DropItems(x, y, fragmentArray);
 }
 
-
+if (entityDropList != EOF)
+{
+	DropItems(x, y, entityDropList);	
+}
 

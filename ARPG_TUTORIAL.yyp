@@ -47,6 +47,7 @@
   "resources":[
     {"id":{"name":"fText","path":"fonts/fText/fText.yy",},},
     {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},},
+    {"id":{"name":"oCoin","path":"objects/oCoin/oCoin.yy",},},
     {"id":{"name":"oFishy","path":"objects/oFishy/oFishy.yy",},},
     {"id":{"name":"oFragment","path":"objects/oFragment/oFragment.yy",},},
     {"id":{"name":"oFragPlant","path":"objects/oFragPlant/oFragPlant.yy",},},
@@ -64,6 +65,7 @@
     {"id":{"name":"oTextQueued","path":"objects/oTextQueued/oTextQueued.yy",},},
     {"id":{"name":"oTransition","path":"objects/oTransition/oTransition.yy",},},
     {"id":{"name":"oUI","path":"objects/oUI/oUI.yy",},},
+    {"id":{"name":"pCollectable","path":"objects/pCollectable/pCollectable.yy",},},
     {"id":{"name":"pEnemy","path":"objects/pEnemy/pEnemy.yy",},},
     {"id":{"name":"pEntity","path":"objects/pEntity/pEntity.yy",},},
     {"id":{"name":"rInit","path":"rooms/rInit/rInit.yy",},},
@@ -81,6 +83,7 @@
     {"id":{"name":"Text","path":"scripts/Text/Text.yy",},},
     {"id":{"name":"shRedFlash","path":"shaders/shRedFlash/shRedFlash.yy",},},
     {"id":{"name":"shWhiteFlash","path":"shaders/shWhiteFlash/shWhiteFlash.yy",},},
+    {"id":{"name":"sprCoin","path":"sprites/sprCoin/sprCoin.yy",},},
     {"id":{"name":"sprCol","path":"sprites/sprCol/sprCol.yy",},},
     {"id":{"name":"sprFishy","path":"sprites/sprFishy/sprFishy.yy",},},
     {"id":{"name":"sprFragPlant","path":"sprites/sprFragPlant/sprFragPlant.yy",},},
