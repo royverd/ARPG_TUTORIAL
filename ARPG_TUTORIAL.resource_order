@@ -26,6 +26,7 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"fAmmo","order":1,"path":"fonts/fAmmo/fAmmo.yy",},
     {"name":"oBomb","order":4,"path":"objects/oBomb/oBomb.yy",},
     {"name":"oCamera","order":1,"path":"objects/oCamera/oCamera.yy",},
     {"name":"oCoin","order":7,"path":"objects/oCoin/oCoin.yy",},
@@ -67,6 +68,8 @@
     {"name":"sprFragPlant","order":3,"path":"sprites/sprFragPlant/sprFragPlant.yy",},
     {"name":"sprHat","order":2,"path":"sprites/sprHat/sprHat.yy",},
     {"name":"sprHealth","order":7,"path":"sprites/sprHealth/sprHealth.yy",},
+    {"name":"sprItemUI","order":10,"path":"sprites/sprItemUI/sprItemUI.yy",},
+    {"name":"sprItemUIBox","order":11,"path":"sprites/sprItemUIBox/sprItemUIBox.yy",},
     {"name":"sprPlant","order":1,"path":"sprites/sprPlant/sprPlant.yy",},
     {"name":"sprPlantB","order":2,"path":"sprites/sprPlantB/sprPlantB.yy",},
     {"name":"sprPlayer","order":6,"path":"sprites/sprPlayer/sprPlayer.yy",},

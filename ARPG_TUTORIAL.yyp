@@ -45,6 +45,7 @@
   },
   "name":"ARPG_TUTORIAL",
   "resources":[
+    {"id":{"name":"fAmmo","path":"fonts/fAmmo/fAmmo.yy",},},
     {"id":{"name":"fText","path":"fonts/fText/fText.yy",},},
     {"id":{"name":"oBomb","path":"objects/oBomb/oBomb.yy",},},
     {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},},
@@ -95,6 +96,8 @@
     {"id":{"name":"sprFragPlant","path":"sprites/sprFragPlant/sprFragPlant.yy",},},
     {"id":{"name":"sprHat","path":"sprites/sprHat/sprHat.yy",},},
     {"id":{"name":"sprHealth","path":"sprites/sprHealth/sprHealth.yy",},},
+    {"id":{"name":"sprItemUI","path":"sprites/sprItemUI/sprItemUI.yy",},},
+    {"id":{"name":"sprItemUIBox","path":"sprites/sprItemUIBox/sprItemUIBox.yy",},},
     {"id":{"name":"sprPlant","path":"sprites/sprPlant/sprPlant.yy",},},
     {"id":{"name":"sprPlantB","path":"sprites/sprPlantB/sprPlantB.yy",},},
     {"id":{"name":"sprPlayer","path":"sprites/sprPlayer/sprPlayer.yy",},},
