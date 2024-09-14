@@ -181,3 +181,13 @@ function HurtPlayer(_direction, _force, _damage){
 	}
 	
 }
+
+function PlayerDropItem(){
+	
+	with (oPlayer)
+	{
+		global.iLifted = noone;
+		spriteIdle = sprPlayer;
+		spriteRun = sprPlayerRun;
+	}
+}

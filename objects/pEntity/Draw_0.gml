@@ -4,7 +4,8 @@ if (entShadow) draw_sprite(sprShadow, 0, x, y);
 
 if (flash != NULL)
 {
-	shader_set(shWhiteFlash);
+	shader_set(flashShader);
+	uFlash = shader_get_uniform(flashShader, "flash");
 	shader_set_uniform_f(uFlash, flash);
 }
 
