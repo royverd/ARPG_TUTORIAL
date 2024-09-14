@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"CollectFunctions",
+  "%Name":"CollectItems",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"CollectFunctions",
+  "name":"CollectItems",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

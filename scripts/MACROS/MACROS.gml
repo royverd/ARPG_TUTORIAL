@@ -62,6 +62,15 @@
 #macro RIGHT_ANGLE 90
 #macro HALF_ANGLE 45
 
+
+// Items
+#macro ARROW_OFFSET 7
+#macro ARROW_SPEED 6
+#macro ARROW_DMG 10
+#macro ARROW_KNB 20
+#macro EXPLOSION_DMG 25
+#macro EXPLOSION_KNB 40
+
 // Miscellanous
 #macro TILE_SIZE 16
 #macro ROOM_START rVillage
@@ -71,6 +80,9 @@
 #macro MARGIN 8
 #macro COIN_UI_YY 31
 #macro PLAYER_ITEM_MARGIN 24
+
+
+
 // Enums
 
 enum ENEMYSTATE

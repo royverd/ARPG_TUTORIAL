@@ -36,7 +36,7 @@ function DropItems(_x, _y, _items_arr){
 	
 	var _items = array_length_1d(_items_arr);
 
-	if (_items > 1)
+	if (_items >= 1)
 	{
 		var _anglePerItem = FULL_CIRCLE/_items;
 		var _angle = random(FULL_CIRCLE);
