@@ -137,6 +137,10 @@ function PlayerThrow(){
 	PlayerActOutAnimation(sprPlayerLift);
 	global.iLifted = noone;
 	
+	//Reset Sprite
+	spriteIdle = sprPlayer;
+	spriteRun = sprPlayerRun;
+	
 }
 	
 /// @function Deal Damage to Player's 
@@ -144,7 +148,7 @@ function PlayerThrow(){
 /// @param _force The amount of knockback inflicted
 /// @param _damage Amount of damage to be dealt
 	
-	function HurtPlayer(_direction, _force, _damage){
+function HurtPlayer(_direction, _force, _damage){
 	
 	if (oPlayer.invulnerable <= 0)
 	{

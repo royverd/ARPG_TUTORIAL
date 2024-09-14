@@ -90,6 +90,9 @@ function ActivateLiftable(_id){
 	{
 		PlayerActOutAnimation(sprPlayerLift);
 		
+		spriteIdle = sprPlayerCarry;
+		spriteRun = sprPlayerRunCarry;
+		
 		global.iLifted = _id;
 		
 		with (global.iLifted)

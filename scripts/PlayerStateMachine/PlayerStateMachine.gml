@@ -98,11 +98,17 @@ function PlayerStateFree(){
 		}
 		// 3 - Interactable Entity
 		else
-		{
+		{	
+						
+			// Face Entity
+			direction = point_direction(x, y, activate.x, activate.y);
+			image_index = CARDINAL_DIR;
+			
 			show_debug_message("INTERACTABLE ENTITY");
 			script_execute_ext(activate.entActivateScript, activate.entActivateArgs);
 			
 			// 4 - If NPC Entity, Face Player
+			
 			if (activate.entNPC)
 			{
 				show_debug_message("NPC");
@@ -112,6 +118,7 @@ function PlayerStateFree(){
 					image_index = CARDINAL_DIR;
 				}
 			}
+
 		}
 	}
 }
