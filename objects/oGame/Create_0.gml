@@ -10,9 +10,22 @@ global.targetX = EOF;
 global.targetY = EOF;
 global.targetDirection = NULL;
 global.iLifted = noone;
+
+global.playerHasAnyItems = false;
+global.playerEquipped = ITEM.BOMB;
+global.playerAmmo = array_create(ITEM.TYPE_COUNT, EOF);
+global.playerItemUnlocked = array_create(ITEM.TYPE_COUNT, false);
+global.playerAmmo[ITEM.BOMB] = 0;
+global.playerAmmo[ITEM.BOW] = 0;
+
+global.playerItemUnlocked[ITEM.BOMB] = true;
+global.playerHasAnyItems = true;
+global.playerAmmo[ITEM.BOMB] = 5;
+
 global.playerMoney = 0;
 global.playerHealthMax = DEFAULT_PLAYER_HP_MAX;
 global.playerHealth = DEFAULT_PLAYER_HP;
+
 global.questStatus = ds_map_create();
 global.questStatus[? "SimpleFavor"] = 0;
 

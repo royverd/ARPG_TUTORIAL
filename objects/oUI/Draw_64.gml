@@ -31,7 +31,7 @@ for (var i = 1; i <= _playerHealthMax; i++)
 var _xx, _yy;
 
 // Coin Icon
-_xx = MARGIN;
+_xx = MARGIN + 20;
 _yy = COIN_UI_YY;
 draw_sprite(sprCoinUI, 0, _xx, _yy);
 
@@ -47,7 +47,26 @@ draw_text(_xx, _yy - 1, _str);
 draw_set_colour(c_white);
 draw_text(_xx, _yy, _str);
 
+// Draw Item Box
+_xx = MARGIN;
+_yy = PLAYER_ITEM_MARGIN;
 
+draw_sprite(sprItemUIBox, 0, _xx, _yy);
+if (global.playerHasAnyItems)
+{
+	
+	draw_sprite(sprItemUI, global.playerEquipped, _xx, _yy);
+	if (global.playerAmmo[global.playerEquipped] != EOF)
+	{
+		InitText(fAmmo, fa_right, fa_bottom, c_white);
+		draw_text
+		(
+			_xx + sprite_get_width(sprItemUIBox) + 1,
+			_yy + sprite_get_height(sprItemUIBox) + 1,
+			string(global.playerAmmo[global.playerEquipped])
+		)
+	}
+}
 
 
 

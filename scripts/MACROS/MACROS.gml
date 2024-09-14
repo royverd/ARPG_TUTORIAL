@@ -70,7 +70,7 @@
 #macro DEF_MAGNET_RADIUS 16
 #macro MARGIN 8
 #macro COIN_UI_YY 31
-
+#macro PLAYER_ITEM_MARGIN 24
 // Enums
 
 enum ENEMYSTATE
@@ -85,3 +85,11 @@ enum ENEMYSTATE
 	COUNT // HAS TO BE LAST
 }
 
+enum ITEM
+{
+	NONE,
+	BOMB,
+	BOW,
+	HOOK,
+	TYPE_COUNT
+}
