@@ -32,6 +32,7 @@
 #macro DEFAULT_PLAYER_HP_MAX 5
 #macro PLAYER_INVULNERABLE_DUR 120
 #macro PLAYER_COLLECT_RADIUS 5
+
 // Enemies
 #macro DEFAULT_ENEMY_HP 50
 #macro DEFAULT_ENEMY_DMG 0.5
@@ -67,7 +68,8 @@
 #macro CAM_OFF 15
 #macro ATTEMPT 2
 #macro DEF_MAGNET_RADIUS 16
-
+#macro MARGIN 8
+#macro COIN_UI_YY 31
 
 // Enums
 

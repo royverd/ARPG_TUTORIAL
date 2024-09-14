@@ -25,3 +25,31 @@ for (var i = 1; i <= _playerHealthMax; i++)
 	
 
 }
+
+// Coins
+
+var _xx, _yy;
+
+// Coin Icon
+_xx = MARGIN;
+_yy = COIN_UI_YY;
+draw_sprite(sprCoinUI, 0, _xx, _yy);
+
+// Coin Text
+InitText(fText, fa_left, fa_top, c_black);
+_xx += sprite_get_width(sprCoinUI) + 4; // 4 is Magic Buffer
+_yy = 27; // MN
+var _str = string(global.playerMoney);
+draw_text(_xx + 1, _yy, _str);
+draw_text(_xx - 1, _yy, _str);
+draw_text(_xx, _yy + 1, _str);
+draw_text(_xx, _yy - 1, _str);
+draw_set_colour(c_white);
+draw_text(_xx, _yy, _str);
+
+
+
+
+
+
+

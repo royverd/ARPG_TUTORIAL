@@ -10,6 +10,7 @@ global.targetX = EOF;
 global.targetY = EOF;
 global.targetDirection = NULL;
 global.iLifted = noone;
+global.playerMoney = 0;
 global.playerHealthMax = DEFAULT_PLAYER_HP_MAX;
 global.playerHealth = DEFAULT_PLAYER_HP;
 global.questStatus = ds_map_create();

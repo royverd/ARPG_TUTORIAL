@@ -6,6 +6,8 @@
   "name":"oCoin",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"pEntity","path":"objects/pEntity/pEntity.yy",},"propertyId":{"name":"entShadow","path":"objects/pEntity/pEntity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"False",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"pCollectable","path":"objects/pCollectable/pCollectable.yy",},"propertyId":{"name":"collectScript","path":"objects/pCollectable/pCollectable.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"CollectCoins",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"pCollectable","path":"objects/pCollectable/pCollectable.yy",},"propertyId":{"name":"collectScriptArg","path":"objects/pCollectable/pCollectable.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1",},
   ],
   "parent":{
     "name":"Misc",
