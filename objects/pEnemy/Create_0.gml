@@ -32,6 +32,15 @@ sprMove = sprSlime;
 enemyScript = array_create(ENEMYSTATE.COUNT, EOF);
 enemyScript[ENEMYSTATE.WAIT] = EnemyWait;
 
+
+entityDropList = choose(
+	[oBombDrop],
+	[oCoin],[oCoin],[oCoin],[oCoin],[oCoin],[oCoin],
+	[oCoin, oCoin],
+	[oArrowDrop],[oArrowDrop],[oArrowDrop],
+	[oArrowBundleDrop]
+)
+
 /*
 enemyScript[ENEMYSTATE.IDLE] = EOF;
 enemyScript[ENEMYSTATE.WANDER] = EOF;
