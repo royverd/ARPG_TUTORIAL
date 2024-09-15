@@ -295,3 +295,123 @@ function PlayerStateDead(){
 		}
 	}
 }
+	
+function PlayerStateHook(){
+	
+	hSpeed = 0;
+	vSpeed = 0;
+	
+	// If Just Arriving
+	
+	if (sprite_index != sprPlayerHook)
+	{
+		hook = 0;
+		hookX = 0;
+		hookY = 0;
+		hookStatus = HOOKSTATUS.EXTENDING;
+		hookedEntity = noone;
+		
+		// Update Sprite
+		sprite_index = sprPlayerHook;
+		image_index = CARDINAL_DIR;
+		image_speed = 0;
+		
+	}
+	
+	// Extend/Retract Hook
+	
+	var _speedHookTemp = speedHook;
+	if (hookStatus != HOOKSTATUS.EXTENDING) _speedHookTemp *= -1;
+	hook += _speedHookTemp;
+	switch (image_index)
+	{
+		case 0: hookX = hook; break;
+		case 1: hookY = -hook; break;
+		case 2: hookX = -hook; break;
+		case 3: hookY = hook; break;
+		
+	}
+	
+	// HookShot State Machine
+	
+	switch (hookStatus)
+	{
+		case HOOKSTATUS.EXTENDING:
+		{
+			// Finish Extending
+			if (hook >= distanceHook) hookStatus = HOOKSTATUS.MISSED;
+			
+			// Check For Hit
+			var _hookHit = collision_circle(x + hookX, y + hookY, 4, pEntity, false, true);
+			if (_hookHit != noone) && (global.iLifted != _hookHit)
+			{
+				// Act Depending on Hit Instance
+				switch (_hookHit.entHookable) {
+					
+					default: //Not Hookable
+					{
+						if (object_is_ancestor(_hookHit.object_index, pEnemy))
+						{
+							HurtEnemy(_hookHit, HOOK_DMG , id , HOOK_KNB);
+							hookStatus = HOOKSTATUS.MISSED;
+						}
+						else
+						{
+							if (_hookHit.entHitScript != -1)
+							{
+								with (_hookHit) script_execute(entHitScript);
+								hookStatus = HOOKSTATUS.MISSED;								
+							}				
+						}
+					} break;
+					
+				    case 1:
+					{
+						hookStatus = HOOKSTATUS.PULLTOPLAYER;
+						hookedEntity = _hookHit;
+					} break;
+
+				    case 2:
+					{
+						hookStatus = HOOKSTATUS.PULLTOENTITY;
+						hookedEntity = _hookHit;
+					}break;
+				}
+			}
+		} break;
+		
+		// Pull Entity
+		
+		case HOOKSTATUS.PULLTOPLAYER:
+		{
+			with (hookedEntity)
+			{
+				x = other.x + other.hookX;
+				y = other.y + other.hookY;
+				
+			} break;
+			
+			
+		}
+		
+		case HOOKSTATUS.PULLTOENTITY:
+		{
+			switch (image_index)
+			{
+				case 0: x += speedHook; break;
+				case 1: y -= speedHook; break;
+				case 2: x -= speedHook; break;
+				case 3: y += speedHook; break;
+			}
+		} break;
+	}
+	
+	// Finish Retract & End State
+	
+	if (hook <= 0)
+	{
+		hookedEntity = noone;
+		state = PlayerStateFree;
+		
+	}
+}

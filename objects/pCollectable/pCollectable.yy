@@ -7,7 +7,9 @@
   ],
   "managed":true,
   "name":"pCollectable",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"pEntity","path":"objects/pEntity/pEntity.yy",},"propertyId":{"name":"entHookable","path":"objects/pEntity/pEntity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1",},
+  ],
   "parent":{
     "name":"Parents",
     "path":"folders/Objects/Parents.yy",

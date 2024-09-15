@@ -41,6 +41,7 @@
     {"$GMObjectProperty":"v1","%Name":"entFragment","filters":[],"listItems":[],"multiselect":false,"name":"entFragment","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"EOF","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"entThrowBreak","filters":[],"listItems":[],"multiselect":false,"name":"entThrowBreak","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
     {"$GMObjectProperty":"v1","%Name":"entThrowDistance","filters":[],"listItems":[],"multiselect":false,"name":"entThrowDistance","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"DEFAULT_THROW_DISTANCE","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"entHookable","filters":[],"listItems":[],"multiselect":false,"name":"entHookable","rangeEnabled":true,"rangeMax":2.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

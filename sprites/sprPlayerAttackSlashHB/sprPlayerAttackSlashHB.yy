@@ -59,8 +59,8 @@
   },
   "origin":9,
   "parent":{
-    "name":"Misc",
-    "path":"folders/Sprites/Misc.yy",
+    "name":"Player",
+    "path":"folders/Sprites/Instances/Player.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

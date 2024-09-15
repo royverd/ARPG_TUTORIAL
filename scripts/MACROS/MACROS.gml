@@ -62,7 +62,6 @@
 #macro RIGHT_ANGLE 90
 #macro HALF_ANGLE 45
 
-
 // Items
 #macro ARROW_OFFSET 7
 #macro ARROW_SPEED 6
@@ -70,6 +69,9 @@
 #macro ARROW_KNB 20
 #macro EXPLOSION_DMG 25
 #macro EXPLOSION_KNB 40
+#macro HOOK_DMG 2
+#macro HOOK_KNB 5
+#macro HOOK_THROW_OFFSET 7
 
 // Miscellanous
 #macro TILE_SIZE 16
@@ -104,4 +106,12 @@ enum ITEM
 	BOW,
 	HOOK,
 	TYPE_COUNT
+}
+
+enum HOOKSTATUS
+{
+	EXTENDING,
+	PULLTOPLAYER,
+	PULLTOENTITY,
+	MISSED
 }

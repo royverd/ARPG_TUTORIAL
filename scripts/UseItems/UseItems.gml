@@ -36,5 +36,8 @@ function PlayerFireArrow(){
 }
 
 function UseItemHook(){
+	
+	state = PlayerStateHook;
+	localFame = 0;
 
 }
