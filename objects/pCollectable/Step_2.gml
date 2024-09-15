@@ -34,6 +34,23 @@ if (instance_exists(oPlayer))
 	}
 }
 
+// Bounce
+if (bounceCount != 0)
+{
+	bounce += (pi * bounceSpeed);
+	if (bounce >= pi)
+	{
+		bounce -= pi;
+		bounceHeight *= BOUNCE_HEIGHT_FALLOFF;
+		bounceCount--;
+			
+	}
+	z = abs(sin(bounce)) * bounceHeight;
+}
+else z = NULL;
+
+
+// Movement Commit
 x += lengthdir_x(spd, direction);
 y += lengthdir_y(spd, direction);
 spd = max(spd - fric, 0);

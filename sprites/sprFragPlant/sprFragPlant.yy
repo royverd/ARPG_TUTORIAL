@@ -29,7 +29,7 @@
   "origin":4,
   "parent":{
     "name":"Fragments",
-    "path":"folders/Sprites/Instances/Fragments.yy",
+    "path":"folders/Sprites/Fragments.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

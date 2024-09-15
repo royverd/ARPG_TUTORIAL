@@ -50,7 +50,13 @@ if (global.targetX != EOF)
 }
 
 
-
+if (global.iLifted != noone)
+{
+	spriteIdle = sprPlayerCarry;
+	spriteRun = sprPlayerRunCarry;
+	sprite_index = spriteIdle;
+	
+}
 
 
 
