@@ -54,6 +54,7 @@
     {"name":"oUI","order":3,"path":"objects/oUI/oUI.yy",},
     {"name":"pCollectable","order":3,"path":"objects/pCollectable/pCollectable.yy",},
     {"name":"pEnemy","order":2,"path":"objects/pEnemy/pEnemy.yy",},
+    {"name":"rCave","order":4,"path":"rooms/rCave/rCave.yy",},
     {"name":"rRiver","order":3,"path":"rooms/rRiver/rRiver.yy",},
     {"name":"rRoot","order":1,"path":"rooms/rRoot/rRoot.yy",},
     {"name":"rVillage","order":2,"path":"rooms/rVillage/rVillage.yy",},
@@ -115,8 +116,10 @@
     {"name":"sprSlimeAttack","order":1,"path":"sprites/sprSlimeAttack/sprSlimeAttack.yy",},
     {"name":"sprSlimeDie","order":2,"path":"sprites/sprSlimeDie/sprSlimeDie.yy",},
     {"name":"sprSlimeHurt","order":3,"path":"sprites/sprSlimeHurt/sprSlimeHurt.yy",},
+    {"name":"sprTilesCave","order":11,"path":"sprites/sprTilesCave/sprTilesCave.yy",},
     {"name":"sprVillageTiles","order":2,"path":"sprites/sprVillageTiles/sprVillageTiles.yy",},
     {"name":"sTrigger","order":4,"path":"sprites/sTrigger/sTrigger.yy",},
+    {"name":"tTilesCave","order":2,"path":"tilesets/tTilesCave/tTilesCave.yy",},
     {"name":"tVillageTiles","order":1,"path":"tilesets/tVillageTiles/tVillageTiles.yy",},
   ],
 }

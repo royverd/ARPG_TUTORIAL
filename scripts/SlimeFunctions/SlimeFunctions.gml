@@ -72,7 +72,7 @@ function SlimeChase() {
 		yTo = target.y;
 		
 		var _distanceToGo = point_distance(x, y, xTo, yTo);
-		image_speed = 1.0;
+		image_speed = ENEMY_CHASE_SPD;
 		dir = point_direction(x, y, xTo, yTo);
 		if (_distanceToGo > enemySpeed)
 		{
