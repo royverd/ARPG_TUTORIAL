@@ -10,8 +10,8 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"pEnemy","path":"objects/pEnemy/pEnemy.yy",},"propertyId":{"name":"enemyHP","path":"objects/pEnemy/pEnemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"10",},
   ],
   "parent":{
-    "name":"Instances",
-    "path":"folders/Objects/Instances.yy",
+    "name":"Enemies",
+    "path":"folders/Objects/Instances/Enemies.yy",
   },
   "parentObjectId":{
     "name":"pEnemy",

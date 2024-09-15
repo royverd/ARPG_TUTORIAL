@@ -10,8 +10,8 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"pCollectable","path":"objects/pCollectable/pCollectable.yy",},"propertyId":{"name":"collectScriptArg","path":"objects/pCollectable/pCollectable.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1",},
   ],
   "parent":{
-    "name":"Misc",
-    "path":"folders/Objects/Misc.yy",
+    "name":"Drops",
+    "path":"folders/Objects/Misc/Drops.yy",
   },
   "parentObjectId":{
     "name":"pCollectable",

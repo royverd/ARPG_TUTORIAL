@@ -29,7 +29,7 @@
   "origin":7,
   "parent":{
     "name":"Questy",
-    "path":"folders/Sprites/Questy.yy",
+    "path":"folders/Sprites/Instances/NPCs/Questy.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

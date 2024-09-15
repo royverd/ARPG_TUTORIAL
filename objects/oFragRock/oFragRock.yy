@@ -10,8 +10,8 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oFragment","path":"objects/oFragment/oFragment.yy",},"propertyId":{"name":"bounceCount","path":"objects/oFragment/oFragment.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"2",},
   ],
   "parent":{
-    "name":"Misc",
-    "path":"folders/Objects/Misc.yy",
+    "name":"Fragments",
+    "path":"folders/Objects/Misc/Drops/Fragments.yy",
   },
   "parentObjectId":{
     "name":"oFragment",

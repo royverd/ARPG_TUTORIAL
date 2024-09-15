@@ -8,8 +8,8 @@
   "name":"oArrow",
   "overriddenProperties":[],
   "parent":{
-    "name":"Misc",
-    "path":"folders/Objects/Misc.yy",
+    "name":"Projectiles",
+    "path":"folders/Objects/Misc/Projectiles.yy",
   },
   "parentObjectId":null,
   "persistent":false,

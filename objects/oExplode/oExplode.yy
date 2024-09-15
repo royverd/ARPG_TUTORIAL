@@ -10,8 +10,8 @@
   "name":"oExplode",
   "overriddenProperties":[],
   "parent":{
-    "name":"Misc",
-    "path":"folders/Objects/Misc.yy",
+    "name":"InvisibleEntities",
+    "path":"folders/Objects/Misc/InvisibleEntities.yy",
   },
   "parentObjectId":null,
   "persistent":false,

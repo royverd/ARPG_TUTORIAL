@@ -8,8 +8,8 @@
   "name":"oSlime",
   "overriddenProperties":[],
   "parent":{
-    "name":"Instances",
-    "path":"folders/Objects/Instances.yy",
+    "name":"Enemies",
+    "path":"folders/Objects/Instances/Enemies.yy",
   },
   "parentObjectId":{
     "name":"pEnemy",
