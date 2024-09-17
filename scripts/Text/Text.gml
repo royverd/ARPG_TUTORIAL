@@ -69,6 +69,7 @@ function DialogueResponses(_response){
 			break;
 		}
 		case 5: NewTextBox(":<", 2); break;
+		case 6: PurchaseItem(activate.item, activate.itemAmount, activate.itemCost);break;
 		default: break;
 		
 		

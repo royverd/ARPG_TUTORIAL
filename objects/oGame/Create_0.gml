@@ -18,16 +18,16 @@ global.playerItemUnlocked = array_create(ITEM.TYPE_COUNT, false);
 global.playerAmmo[ITEM.BOMB] = 0;
 global.playerAmmo[ITEM.BOW] = 0;
 
-//TEMP
+/*TEMP
 global.playerHasAnyItems = true;
 global.playerItemUnlocked[ITEM.BOMB] = true;
 global.playerAmmo[ITEM.BOMB] = 5;
 global.playerItemUnlocked[ITEM.HOOK] = true;
 global.playerItemUnlocked[ITEM.BOW] = true;
 global.playerAmmo[ITEM.BOW] = 15;
-//TEMP
+TEMP*/
 
-global.playerMoney = 0;
+global.playerMoney = 1000;
 global.playerHealthMax = DEFAULT_PLAYER_HP_MAX;
 global.playerHealth = DEFAULT_PLAYER_HP;
 

@@ -14,8 +14,8 @@
     "path":"folders/Objects/Misc/Drops.yy",
   },
   "parentObjectId":{
-    "name":"pCollectable",
-    "path":"objects/pCollectable/pCollectable.yy",
+    "name":"pAmmoDrop",
+    "path":"objects/pAmmoDrop/pAmmoDrop.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
