@@ -281,7 +281,7 @@
           140,141,142,-3,0,-25,-2147483648,-4,0,8,150,151,152,153,154,155,156,157,-3,0,-25,-2147483648,-4,0,8,
           165,166,167,168,169,170,171,172,-3,0,-25,-2147483648,-4,0,8,180,181,182,183,184,185,186,187,-3,0,-25,
           -2147483648,-4,0,10,195,196,197,198,199,200,201,202,0,0,-27,-2147483648,-3,0,10,210,211,212,213,214,
-          215,216,217,0,217,-27,-2147483648,-10,0,-31,-2147483648,-8,0,-34,-2147483648,-4,0,-550,-2147483648,
+          215,216,217,0,0,-27,-2147483648,-10,0,-31,-2147483648,-8,0,-34,-2147483648,-4,0,-550,-2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"tVillageTiles","path":"tilesets/tVillageTiles/tVillageTiles.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"TilesMain","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"TilesMain","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":23,"SerialiseWidth":40,"TileCompressedData":[
           -40,84,-6,43,-9,28,-6,43,6,173,174,175,176,177,178,-13,43,-2,23,1,24,-3,105,2,85,193,-4,206,1,193,-8,
