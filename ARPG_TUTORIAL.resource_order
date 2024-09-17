@@ -81,6 +81,7 @@
     {"name":"PlayerScripts","order":4,"path":"scripts/PlayerScripts/PlayerScripts.yy",},
     {"name":"PlayerStateMachine","order":1,"path":"scripts/PlayerStateMachine/PlayerStateMachine.yy",},
     {"name":"QuestScripts","order":8,"path":"scripts/QuestScripts/QuestScripts.yy",},
+    {"name":"Technical","order":13,"path":"scripts/Technical/Technical.yy",},
     {"name":"Text","order":3,"path":"scripts/Text/Text.yy",},
     {"name":"UseItems","order":10,"path":"scripts/UseItems/UseItems.yy",},
     {"name":"shRedFlash","order":2,"path":"shaders/shRedFlash/shRedFlash.yy",},

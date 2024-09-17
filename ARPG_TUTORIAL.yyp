@@ -119,6 +119,7 @@
     {"id":{"name":"PlayerStateMachine","path":"scripts/PlayerStateMachine/PlayerStateMachine.yy",},},
     {"id":{"name":"QuestScripts","path":"scripts/QuestScripts/QuestScripts.yy",},},
     {"id":{"name":"SlimeFunctions","path":"scripts/SlimeFunctions/SlimeFunctions.yy",},},
+    {"id":{"name":"Technical","path":"scripts/Technical/Technical.yy",},},
     {"id":{"name":"Text","path":"scripts/Text/Text.yy",},},
     {"id":{"name":"UseItems","path":"scripts/UseItems/UseItems.yy",},},
     {"id":{"name":"shRedFlash","path":"shaders/shRedFlash/shRedFlash.yy",},},

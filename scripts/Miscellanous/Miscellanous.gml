@@ -59,7 +59,7 @@ function DropItems(_x, _y, _items_arr){
 
 }
 	
-/// @function Handles All Transitions
+/// @function Handles All Room Transitions
 /// @param _type Type of Transition
 /// @param _target_room Room Transitioning to
 function RoomTransition(_type, _target_room){

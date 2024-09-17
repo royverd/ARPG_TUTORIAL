@@ -3,6 +3,8 @@
 // Randomize Game Seed
 randomize();
 
+global.gameSaveSlot = 0;
+
 global.gamePaused = false;
 global.textSpeed = 0.75;
 global.targetRoom = EOF;
