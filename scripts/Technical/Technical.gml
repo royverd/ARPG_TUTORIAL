@@ -5,7 +5,7 @@ function SaveGame(){
 	var _map = ds_map_create();
 	
 	_map[? "room"] = room;
-	_map[? "playerHealth"] = global.playerHealthMax;
+	_map[? "playerHealth"] = global.playerHealth;
 	_map[? "playerHealthMax"] = global.playerHealthMax;
 	_map[? "playerMoney"] = global.playerMoney;
 	_map[? "playerItemUnlocked"] = global.playerItemUnlocked;

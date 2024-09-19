@@ -76,7 +76,7 @@
 
 // Miscellanous
 #macro TILE_SIZE 16
-#macro ROOM_START rVillage
+#macro ROOM_START rTitle
 #macro CAM_OFF 15
 #macro ATTEMPT 2
 #macro DEF_MAGNET_RADIUS 16
